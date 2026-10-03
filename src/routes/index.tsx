@@ -66,6 +66,7 @@ function Index() {
       return () => { clearTimeout(t1); clearInterval(iv); };
     }
     if (stage === 5) { const t = setTimeout(() => sideBursts(false), 300); return () => clearTimeout(t); }
+    return undefined;
   }, [stage]);
 
   const anim = leaving ? "cine-out" : "cine-in";

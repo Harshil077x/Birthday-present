@@ -14,7 +14,7 @@ export function Balloons({ interactive, dim, onPop }: { interactive: boolean; di
       const w = window.innerWidth;
       const size = (w < 640 ? 26 : 34) + Math.random() * (w < 640 ? 16 : 22);
       setList((l) => [...l, {
-        id: id.current++, x: Math.random() * 94 + 1, size, color: COLORS[(Math.random() * COLORS.length) | 0],
+        id: id.current++, x: Math.random() * 94 + 1, size, color: COLORS[(Math.random() * COLORS.length) | 0]!,
         dur: 9 + Math.random() * 8, sway: 2 + Math.random() * 2.5,
       }].slice(-24));
     };

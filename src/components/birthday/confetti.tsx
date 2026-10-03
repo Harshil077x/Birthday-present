@@ -19,9 +19,9 @@ export function burst(x: number, y: number, opts: { count?: number; angle?: numb
     const max = rand(life * 0.6, life * 1.3);
     particles.push({
       x, y, vx: Math.cos(a) * s, vy: Math.sin(a) * s, size: rand(3, 8), rot: rand(0, 6.28), vr: rand(-0.3, 0.3),
-      life: max, max, color: COLORS[(Math.random() * COLORS.length) | 0], shape: (Math.random() * 3) as unknown as 0, g: gravity * rand(0.6, 1.3),
+      life: max, max, color: COLORS[(Math.random() * COLORS.length) | 0]!, shape: (Math.random() * 3) as unknown as 0, g: gravity * rand(0.6, 1.3),
     });
-    particles[particles.length - 1].shape = Math.floor(Math.random() * 3) as 0 | 1 | 2;
+    particles[particles.length - 1]!.shape = Math.floor(Math.random() * 3) as 0 | 1 | 2;
   }
 }
 
@@ -54,7 +54,7 @@ export function ConfettiCanvas({ className = "" }: { className?: string }) {
     const loop = () => {
       ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
       for (let i = particles.length - 1; i >= 0; i--) {
-        const p = particles[i];
+        const p = particles[i]!;
         p.vx *= 0.975; p.vy = p.vy * 0.975 + p.g; p.x += p.vx; p.y += p.vy; p.rot += p.vr; p.life--;
         if (p.life <= 0) { particles.splice(i, 1); continue; }
         ctx.globalAlpha = Math.min(1, (p.life / p.max) * 1.6);
