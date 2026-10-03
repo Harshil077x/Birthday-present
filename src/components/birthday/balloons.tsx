@@ -31,7 +31,6 @@ export function Balloons({ interactive, dim, onPop }: { interactive: boolean; di
     setList((l) => l.map((x) => (x.id === b.id ? { ...x, popping: true } : x)));
     setTimeout(() => burst(r.left + r.width / 2, r.top + r.height / 2, { count: 45, speed: 7, life: 60 }), 120);
     setTimeout(() => remove(b.id), 300);
-    onPop?.();
   };
 
   return (
