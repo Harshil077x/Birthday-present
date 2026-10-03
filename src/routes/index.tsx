@@ -6,9 +6,25 @@ import { ConfettiCanvas, burst, sideBursts } from "@/components/birthday/confett
 import memory from "@/assets/memory.jpg";
 
 // ✏️ Edit these to personalise the surprise
-const NAME = "Thomaii";
-const MESSAGE = `Happy Birthday to the most extraordinary person in my life. As we mark another year, I find myself reflecting on all the moments, big and small, that have shaped our journey together. You possess a unique way of turning the ordinary into something truly magical, and I am constantly in awe of your strength, your kindness, and the way you approach the world. Thank you for being the partner who inspires me to grow and the safe harbor where I always feel at home. Today is more than just a celebration of your birth; it is a celebration of the immense light you bring into every room you enter. May this next chapter be filled with the same joy and wonder you give so freely to others. You deserve all the beauty life has to offer, and I am honored to be by your side to experience it all with you. Here is to celebrating you today and to the many more beautiful years we have ahead of us. Happy Birthday, my love.`;
-const MUSIC_SRC = "/assets/music.mp3"; // replace public/assets/music.mp3 with your song
+const NAME = "Hetuu..";
+const MESSAGE = `Happy Birthday, Hettu! 🎂❤️✨
+
+Today is all about celebrating the most beautiful person who makes my life a little brighter just by being in it. 🥹💗 I honestly feel so lucky to have you by my side. You’re not just my girlfriend, you’re my favorite person, my comfort, my happiness, and someone who makes even the ordinary days feel special. 🫶🏻🌸
+
+I hope this birthday brings you all the happiness you deserve. May every dream you have come true, may you always keep that beautiful smile on your face 😊💫, and may this new year of your life be filled with love, success, peace, and countless beautiful memories. 🌷✨
+
+Thank you for being there, for understanding me, for making me smile, and simply for being **you**. ❤️ I may not always know the perfect words to express how much you mean to me, but I hope you always remember that you have a very special place in my heart. 🫀🥺
+
+I want to make many more memories with you, laugh with you, annoy you 😭😂, support you through everything, and be there for all the little and big moments of your life. 🫂💞
+
+So today, forget everything else and just smile, because **you deserve the world and so much more.** 🌎❤️
+
+Happy Birthday once again, my Hettu! 🎂🎀💗  
+Keep smiling, keep shining, and never change the beautiful person you are. ✨🥹
+
+**I love you. ❤️🫶🏻**
+Here’s to you, to us, and to all the beautiful memories still waiting for us. 🥂💖✨`;
+const MUSIC_SRC = "aud.mp3"; // replace public/assets/music.mp3 with your song
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -120,7 +136,7 @@ function Index() {
             <h1 className="font-display text-6xl leading-[1.05] text-glow-gold sm:text-8xl">
               <span className="cine-in block">Happy</span>
               <span className="cine-in delay-1 block">birthday</span>
-              <span className="cine-in delay-2 block">to you</span>
+              <span className="cine-in delay-2 block">Hetu❤️✨</span>
             </h1>
             <p className="cine-in delay-3 mt-8 font-mono text-xs tracking-widest text-gold/70">Tap anywhere to continue</p>
           </div>
