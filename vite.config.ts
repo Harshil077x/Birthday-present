@@ -7,5 +7,11 @@ export default defineConfig({
 
   tanstackStart: {
     server: { entry: "server" },
+
+    spa: {
+      prerender: {
+        outputPath: "/index.html",
+      },
+    },
   },
 });
